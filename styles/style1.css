@@ -1,0 +1,35 @@
+* {
+    text-decoration: none;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+    border: none;
+}
+
+html {
+    overflow-y: scroll;
+}
+
+body {
+    background: #dfdfdf;
+    font-size: 1em;
+    color: #000;
+    line-height: 1.6;
+    margin: 0;
+}
+
+a {
+    color: #000;
+    border-bottom: 2px solid #45a338;
+    transition: border .3s ease-in-out;
+}
+
+a:hover {
+    border-bottom: 2px solid #000;
+}
+
+/* responsive */
+@media screen and (max-width: 650px) {
+    .btn.btn-fix-margin {
+        margin-bottom: 5px;
+    }
+}
