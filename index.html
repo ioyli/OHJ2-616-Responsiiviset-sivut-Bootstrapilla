@@ -4,6 +4,7 @@
 <head>
     <title>Tieto- ja viestintätekniikan perustutkinto</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
@@ -15,6 +16,7 @@
 </head>
 
 <body>
+    <div id="parent">
     <p>
     <div class="wrapper text-center">
         <button class="btn btn-success btn-lg btn-fix-margin" type="button" data-bs-toggle="collapse"
@@ -41,8 +43,8 @@
     </p>
 
     <!-- ETUSIVU -->
-    <div class="collapse show" id="collapseEtusivu">
-        <div class="card card-body">
+    <div class="collapse collapse show" id="collapseEtusivu" data-bs-parent="#parent">
+        <div class="card card-body border-0 border-0">
             <h2>Tutkinnon suorittaneen osaaminen</h2>
             <p>Tieto- ja viestintätekniikan perustutkinnon suorittaneella on tieto- ja viestintätekniikan tehtävissä
                 edellytetty
@@ -93,8 +95,8 @@
     </div>
 
     <!-- TUTKINNON RAKENNE -->
-    <div class="collapse" id="collapseRakenne">
-        <div class="card card-body">
+    <div class="collapse" id="collapseRakenne" data-bs-parent="#parent">
+        <div class="card card-body border-0">
             <h1>Tutkinnon rakenne</h1>
             <p>Tieto- ja viestintätekniikan perustutkinnon laajuus on 180 osaamispistettä. Tutkinto muodostuu
                 ammatillisista
@@ -115,8 +117,8 @@
     </div>
 
     <!-- TUTKINNONOSAT -->
-    <div class="collapse" id="collapseOsat">
-        <div class="card card-body">
+    <div class="collapse" id="collapseOsat" data-bs-parent="#parent">
+        <div class="card card-body border-0">
             <h1>Tutkinnonosat</h1>
 
             <h2>Tieto- ja viestintätekniikan perustehtävät, 25 osp</h2>
@@ -272,8 +274,8 @@
     </div>
 
     <!-- KRITEERIT -->
-    <div class="collapse" id="collapseKriteerit">
-        <div class="card card-body">
+    <div class="collapse" id="collapseKriteerit" data-bs-parent="#parent">
+        <div class="card card-body border-0">
             <h1>Arviointikriteerit</h1>
             <table class="kriteerilista">
                 <thead>
@@ -379,8 +381,8 @@
 
 
     <!-- ARVIOINTI -->
-    <div class="collapse" id="collapseArviointi">
-        <div class="card card-body">
+    <div class="collapse" id="collapseArviointi" data-bs-parent="#parent">
+        <div class="card card-body border-0">
             <h1>Osaamisen arviointi</h1>
 
             <p>Ammatilliset tutkinnon osat arvioidaan asteikolla 1–5 tutkinnon osan ammattitaitovaatimusten ja
@@ -395,6 +397,7 @@
             <p>4 = Opiskelijan osaamisen taso ylittää selkeästi 3-tason, mutta ei yllä 5-tasolle.</p>
         </div>
     </div>
+</div>
 </body>
 
 </html>
